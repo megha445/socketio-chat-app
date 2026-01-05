@@ -54,7 +54,7 @@ const SignUpPage = () => {
                 <input
                   type="text"
                   className="input input-bordered w-full pl-10"
-                  placeholder="Sai Reddy"
+                  placeholder="meghashyam"
                   value={formData.fullName}
                   onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
                   autoComplete="name"
@@ -73,7 +73,7 @@ const SignUpPage = () => {
                 <input
                   type="email"
                   className="input input-bordered w-full pl-10"
-                  placeholder="saireddy@gmail.com"
+                  placeholder="meghashyam@gmail.com"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   autoComplete="email"
