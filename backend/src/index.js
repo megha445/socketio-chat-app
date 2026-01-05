@@ -25,13 +25,13 @@ app.use(cors({
 app.use('/api/auth', authRoutes);
 app.use('/api/messages', messageRoutes);
 
-if (process.env.NODE_ENV === 'production') {
-  const frontendPath = path.join(__dirname, '../../frontend/dist');
-  app.use(express.static(frontendPath));
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(frontendPath, 'index.html'));
-  });
-}
+// if (process.env.NODE_ENV === 'production') {
+//   const frontendPath = path.join(__dirname, '../../frontend/dist');
+//   app.use(express.static(frontendPath));
+//   app.get('*', (req, res) => {
+//     res.sendFile(path.join(frontendPath, 'index.html'));
+//   });
+// }
 
 app.get('/', (req, res) => {
   res.send("API is running successfully");
