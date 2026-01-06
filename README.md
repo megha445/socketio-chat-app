@@ -41,6 +41,58 @@ A full-stack real-time chat application built with MERN stack, Socket.io, and Cl
 
 ## 🚀 Installation & Setup
 
+### 🐳 Quick Start with Docker (Recommended)
+
+**Prerequisites:**
+- Docker Desktop installed ([Download here](https://www.docker.com/products/docker-desktop))
+- MongoDB Atlas account
+- Cloudinary account
+
+**Steps:**
+
+1. **Clone repository:**
+```bash
+git clone https://github.com/megha445/socketio-chat-app.git
+cd socketio-chat-app
+```
+
+2. **Create `.env` file in root directory:**
+```env
+MONGODB_URI=your_mongodb_atlas_connection_string
+JWT_SECRET=your_jwt_secret
+CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+```
+
+3. **Start with Docker:**
+```bash
+docker-compose up
+```
+
+4. **Open application:**
+- Frontend: http://localhost:5173
+- Backend: http://localhost:3000
+
+**Useful Docker Commands:**
+```bash
+# Stop containers
+docker-compose down
+
+# Rebuild after code changes
+docker-compose up --build
+
+# View logs
+docker-compose logs -f
+
+# Run in background
+docker-compose up -d
+```
+
+---
+
+### 💻 Manual Setup (Without Docker)
+
 ### Prerequisites
 - Node.js v14 or higher
 - MongoDB Atlas account
@@ -211,7 +263,7 @@ socketio-chat-app/
 ## 👨‍💻 Author
 
 **megha shaym**
-- GitHub: [@megha445](https://github.com/YOUR-megha445)
+- GitHub: [@megha445](https://github.com/megha445)
 - Email: vattamvenkatasaimeghashyamredd@gmail.com
 
 ---
